@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Application Using Servlets and JSP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 600px;
+            width: 90%;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        .subtitle {
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 1.2em;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .feature-card {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #4CAF50;
+            text-align: left;
+        }
+        .feature-card h3 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+        .feature-card p {
+            color: #666;
+            line-height: 1.6;
+            margin: 0;
+        }
+        .nav-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+        .nav-button {
+            background: linear-gradient(45deg, #4CAF50, #45a049);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 16px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: inline-block;
+        }
+        .nav-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .nav-button.secondary {
+            background: linear-gradient(45deg, #007bff, #0056b3);
+        }
+        .nav-button.tertiary {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a52);
+        }
+        .tech-stack {
+            margin-top: 30px;
+            padding-top: 30px;
+            border-top: 1px solid #eee;
+        }
+        .tech-stack h4 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .tech-tag {
+            background: #e9ecef;
+            color: #495057;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Web Application</h1>
+        <p class="subtitle">Using Servlets and JSP for User Input Handling and Database Integration</p>
+        
+        <div class="features">
+            <div class="feature-card">
+                <h3>🔐 User Authentication</h3>
+                <p>Secure login system with HTML forms and Servlet-based authentication. Features personalized welcome messages and credential validation.</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3>👥 Employee Management</h3>
+                <p>Complete employee records system with JDBC integration. View all employees or search by ID with dynamic HTML generation.</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3>📚 Attendance Portal</h3>
+                <p>Student attendance management using JSP frontend and Servlet backend. Real-time form submission and database storage.</p>
+            </div>
+        </div>
+        
+        <div class="nav-buttons">
+            <a href="login" class="nav-button">User Login Portal</a>
+            <a href="employees" class="nav-button secondary">Employee Records</a>
+            <a href="attendance" class="nav-button tertiary">Attendance Portal</a>
+        </div>
+        
+        <div class="tech-stack">
+            <h4>Technology Stack</h4>
+            <div class="tech-tags">
+                <span class="tech-tag">Java Servlets</span>
+                <span class="tech-tag">JSP</span>
+                <span class="tech-tag">JDBC</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
